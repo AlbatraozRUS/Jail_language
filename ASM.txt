@@ -1,0 +1,83 @@
+Push 0
+Push [0]
+Push 3
+Push [1]
+In
+Push [2]
+In
+Push [3]
+In
+Push [4]
+Pop [2]
+Push 0
+Neq Else_if_0
+Pop [3]
+Push 0
+Neq Else_if_1
+Pop [4]
+Push 0
+Neq Else_if_2
+Pop [1]
+Out
+Jp End_if_2
+Else_if_2:
+Pop [0]
+Out
+End_if_2:
+Jp End_if_1
+Else_if_1:
+Push 0
+Push 1
+Sub
+Pop [4]
+Mul
+Pop [3]
+Div
+Push [5]
+Pop [5]
+Out
+End_if_1:
+Jp End_if_0
+Else_if_0:
+Pop [3]
+Pop [3]
+Mul
+Push 4
+Pop [2]
+Mul
+Pop [4]
+Mul
+Sub
+Push [6]
+Sqrt
+Push [6]
+Push 0
+Push 1
+Sub
+Pop [3]
+Mul
+Pop [6]
+Add
+Push 2
+Pop [2]
+Mul
+Div
+Push [7]
+Push 0
+Push 1
+Sub
+Pop [3]
+Mul
+Pop [6]
+Sub
+Push 2
+Pop [2]
+Mul
+Div
+Push [8]
+Pop [7]
+Out
+Pop [8]
+Out
+End_if_0:
+End
