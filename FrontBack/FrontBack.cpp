@@ -295,4 +295,3 @@ void Make_Space(FILE *OUT)
     for (int Iteration = 0; Iteration < Space; Iteration++)
         fprintf(OUT, " ");
 }
-
